@@ -2,5 +2,20 @@
 
 <div>
   <button>Add New Product</button>
-  <table></table>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Unit Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = 'let product of products'>
+        <td>{{product.title}}</td>
+        <td>{{product.description}}</td>
+        <td>{{product.unitPrice}}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
