@@ -6,12 +6,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductsComponent } from './core/components/products/products.component';
 import { UsersComponent } from './core/components/users/users.component';
+import { AddProductComponent } from './core/components/products/add-product/add-product.component';
+import { NotfoundComponent } from './core/components/notfound/notfound.component';
+import { ProductDetailsComponent } from './core/components/products/product-details/product-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    UsersComponent,
+    NotfoundComponent,
     ProductsComponent,
-    UsersComponent
+    AddProductComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
